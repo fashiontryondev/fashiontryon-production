@@ -39,7 +39,7 @@ RUN pip3 install --upgrade pip setuptools
 RUN apt-get install gfortran gcc musl-dev -y
 RUN pip3 install Cython
 RUN pip3 install torch==1.1.0 torchvision==0.3.0 -f https://download.pytorch.org/whl/cu90/torch_stable.html
-RUN pip3 install cupy==6.0.0
+RUN pip3 install cupy-cuda90
 
 RUN apt-get install sudo -y
 RUN sudo ln /usr/local/cuda /usr/local/cuda-9.0
